@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-left">
+        <a href="01_interra.html" class="nav-link interra-hover">Interra</a>
+        <a href="02_v.napoles.html" class="nav-link napoles-hover">V. Nápoles</a>
+        <a href="03_v.constanza.html" class="nav-link constanza-hover">V. Constanza</a>
+        <a href="04_v.alma.html" class="nav-link alma-hover">V. Alma</a>
+        <a href="05_inversion.html" class="nav-link inversion-hover">Inversión</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://www.facebook.com/share/1AtoX57Vsp/?mibextid=wwXIfr" class="nav-link facebook-hover"
+        >Facebook</a>
+      <a href="https://www.instagram.com/interra.capital/profilecard/?igsh=MWhrazdqYWNxeTBvaw==" class="nav-link instagram-hover"
+        >Instagram</a>
+      <a href="https://api.whatsapp.com/send?phone=51949174340&text=%C2%A1Hola!%20Vi%20su%20anuncio%20y%20estoy%20interesad%40%20en%20comprar%20un%20terreno%20para%20casa%20de%20campo%20%F0%9F%8F%A1" class="nav-link whatsapp-hover"
+        >Whatsapp</a>
+      </div>
+    </div>
+
+    <h1>Inversión</h1>
+    <h2>¿Nuestros inversionistas?</h2>
+
+    <section id="contenedor-interra">  
+      <div class="interra">
+      <h5>Inversionistas nacionales y extranjeros</h5>
+      </div>
+        
+       <div class="interra">
+      <h5>Familias que invierten en propiedades</h5>
+      </div>
+
+       <div class="interra">
+      <h5>Desarrolladores y constructores locales</h5>
+      </div>
+      
+    </section>
+    
+    
+
+    <section>
+      <div>
+        <h2>Calculadora de ganancias:</h2>
+
+<p>Monto (S/): <input type="number" id="monto"></p>
+<p>Plazo (meses): <input type="number" id="plazo"></p>
+<p>Tasa de interés (%): <input type="number" id="tasa" value="1"></p>
+
+<button onclick="calcular()">Calcular</button>
+
+<p>Ganancia: S/ <span id="Resultado">0.00</span></p>
+
+<script>
+  function calcular() {
+    var monto = parseFloat(document.getElementById("monto").value);
+    var plazo = parseFloat(document.getElementById("plazo").value);
+    var tasa = parseFloat(document.getElementById("tasa").value)/100;
+
+var interes = monto * tasa * plazo;
+document.getElementById("Resultado").textContent = interes.toFixed(2);
+}
+</script>
+
+      </div>
+    </section>
+
+<h2>Contáctanos</h2>
+
+    <div class="contenedor-whatsapp">
+      <section>
+        <a href="https://wa.link/interra"> Whatsapp INTERRA CAPITAL </a>
+      </section>
+    </div>
+    <section>
+      <h2>Formulario de contacto</h2>
+
+      <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
+</html>
