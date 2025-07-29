@@ -1,0 +1,310 @@
+/* selector de etiqueta */
+*
+  box-sizing: border-box
+  margin: 2px
+  padding: 2px
+
+h1, h3
+  color: rgb(94, 101, 71)
+  font-size: 30px
+  font-family: Arial, Helvetica, sans-serif
+  text-align: center
+
+h2
+  color: rgb(2, 2, 92)
+  font-size: 28px
+  font-family: Arial, Helvetica, sans-serif
+  text-align: center
+
+h5, p, ul
+  color: black
+  font-family: Arial, Helvetica, sans-serif
+  text-align: center
+
+h5
+  font-size: 13px
+
+p
+  font-size: 18px
+
+ul
+  font-size: 25px
+
+img
+  width: 100%
+  max-width: 400px
+  border-radius: 10px
+
+.slide
+  img
+    width: 300px
+    height: 200px
+    border-radius: 6px
+    transition: transform 0.3s
+    &:hover
+      transform: scale(1.05)
+
+body
+  background-color: rgb(241, 249, 239)
+
+.contenedor-brochure, .contenedor-mapa, .contenedor-whatsapp, .contenedor-redes
+  text-align: center
+
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px 20px
+  background-color: rgb(10, 10, 109)
+
+.nav-left a, .nav-right a
+  margin-right: 15px
+  text-decoration: none
+  color: white
+
+.nav-left a:last-child, .nav-right a:last-child
+  margin-right: 0
+
+.footer-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: rgb(170, 175, 146)
+  color: aliceblue
+  padding: 20px
+  flex-wrap: wrap
+
+.footer-slider
+  flex: 1
+  width: 100%
+  min-width: 0
+  overflow: hidden
+  margin-right: 10px
+
+.slider
+  height: 400px
+  position: relative
+  overflow: hidden
+
+.slide-track
+  display: flex
+  animation: scroll 15s linear infinite
+
+.slide
+  min-width: 400px
+  margin-right: 5px
+  img
+    width: 100%
+    height: 100%
+    border-radius: 12px
+
+@keyframes scroll
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(-50%)
+
+.footer-texto
+  flex: 1
+  min-width: 20px
+  max-width: 500px
+  h2
+    margin-top: 0
+  p
+    margin: 5px 0
+
+.contacto-seccion
+  background-image: url(images/realidad-domo.jpg)
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  padding: 80px 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 500px
+  position: relative
+
+.formulario-contacto
+  background-color: rgba(0, 0, 0, 0.7)
+  padding: 40px
+  border-radius: 12px
+  max-width: 500px
+  width: 100%
+  color: #fff
+  text-align: center
+  h2
+    margin-top: 0
+  form
+    display: flex
+    flex-direction: column
+    gap: 15px
+    margin-top: 20px
+    input, textarea
+      padding: 12px
+      border: none
+      border-radius: 6px
+      font-size: 1rem
+    button
+      padding: 12px
+      border: none
+      background-color: #1c801c
+      color: white
+      font-size: 1rem
+      border-radius: 6px
+      cursor: pointer
+      transition: background-color 0.3s
+      &:hover
+        background-color: #2c9729
+
+#contenedor-interra
+  width: 100%
+  height: 400px
+  background-color: rgb(157, 159, 147)
+  margin-bottom: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  row-gap: 50px
+  column-gap: 30px
+  overflow-x: auto
+  flex-wrap: wrap
+
+.interra
+  width: 180px
+  height: 220px
+  border: 1px solid white
+  padding: 8px 4px
+  background-color: rgb(170, 175, 146)
+
+.nav-link
+  color: black
+  text-decoration: none
+  transition: color 0.3s ease
+
+.index-hover:hover,
+.napoles-hover:hover,
+.constanza-hover:hover,
+.alma-hover:hover,
+.inversion-hover:hover,
+.facebook-hover:hover,
+.instagram-hover:hover,
+.whatsapp-hover:hover
+  color: rgb(157, 159, 147)
+
+.cuadro-1x2
+  display: flex
+  width: 90%
+  margin: 40px auto
+  background-color: rgb(170, 175, 146)
+  border-radius: 10px
+  overflow: hidden
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+.texto
+  flex: 1
+  padding: 30px
+  font-family: Arial, Helvetica, sans-serif
+  color: black
+
+.imagen
+  flex: 1
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+@media (max-width: 768px)
+  .cuadro-1x2
+    flex-direction: column
+
+.contenedor-servicios
+  display: flex
+  justify-content: center
+  gap: 40px
+  background-color: #9d9f93
+  padding: 20px 0
+
+.recuadro
+  width: 280px
+  background-color: #aaaf92
+  border: 1px solid white
+  border-radius: 8px
+  overflow: hidden
+  text-align: center
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+  transition: transform 0.3s
+  img
+    justify-content: center
+    width: 70%
+    height: 200px
+    object-fit: cover
+  p
+    margin: 15px
+    font-weight: bold
+    font-size: 14px
+    color: #000
+
+.fila-contacto
+  display: flex
+  justify-content: space-around
+  align-items: flex-start
+  flex-wrap: wrap
+  gap: 2rem
+  padding: 2rem
+
+.imagen-contacto img
+  max-width: 500px
+  height: 600px
+  border-radius: 8px
+
+.formulario-contacto
+  max-width: 500px
+  flex: 1
+  form
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    input, textarea
+      width: 100%
+      padding: 0.75rem
+      border: 1px solid #ccc
+      border-radius: 4px
+    button
+      padding: 0.75rem
+      background-color: #006400
+      color: white
+      border: none
+      border-radius: 4px
+      cursor: pointer
+
+@media (max-width: 768px)
+  .fila-contacto
+    flex-direction: column
+    align-items: center
+  .formulario-contacto
+    width: 100%
+  .navbar
+    flex-direction: column
+    align-items: flex-start
+  .nav-left, .nav-right
+    width: 100%
+    text-align: center
+    margin-bottom: 10px
+  .contenedor-servicios
+    flex-direction: column
+    align-items: center
+  .recuadro
+    width: 90%
+  .footer-container
+    flex-direction: column
+    align-items: center
+  .footer-slider
+    min-width: 100%
+    max-width: 100%
+  .footer-texto
+    max-width: 100%
+  .imagen-contacto img
+    max-width: 100%
+    height: auto
+  .cuadro-1x2
+    flex-direction: column
