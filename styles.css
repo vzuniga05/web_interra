@@ -180,7 +180,7 @@ flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 500px;
+  min-height: 400px;
   position: relative;
 }
 
@@ -371,8 +371,8 @@ color: rgb(157, 159, 147);
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap; /* importante para móviles */
-  gap: 2rem;
-  padding: 2rem;
+  gap: 10px;
+  padding: 10px;
 }
 
 .imagen-contacto img {
@@ -389,7 +389,7 @@ color: rgb(157, 159, 147);
 .formulario-contacto form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 40px;
 }
 
 .formulario-contacto input,
@@ -463,4 +463,37 @@ color: rgb(157, 159, 147);
   .cuadro-1x2 {
     flex-direction: column;
   }
+}
+
+/* Centrar el botón */
+.button-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Botón verde - Estilo 2 */
+.calculate-btn {
+    background: linear-gradient(135deg, #27ae60, #229954);
+    color: white;
+    border: none;
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.calculate-btn:hover {
+    background: linear-gradient(135deg, #229954, #1e7e34);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(39, 174, 96, 0.4);
+}
+
+.calculate-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
 }

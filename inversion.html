@@ -56,7 +56,12 @@
 <p>Plazo (meses): <input type="number" id="plazo"></p>
 <p>Tasa de interés (%): <input type="number" id="tasa" value="1"></p>
 
-<button onclick="calcular()">Calcular</button>
+<div class="button-container">
+<button type="button" class="calculate-btn" onclick="calcular()">
+Calcular
+</button>
+  <!--<button onclick="calcular()">Calcular</button>-->
+</div>
 
 <p>Ganancia: S/ <span id="Resultado">0.00</span></p>
 
